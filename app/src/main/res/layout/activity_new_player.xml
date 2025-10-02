@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:background="#EBEBEB">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:padding="8dp">
+
+        <android.widget.TextView
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:textAlignment="center"
+            android:text="Play juegos"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.ImageView
+            android:id="@+id/usericon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:src="@drawable/usericon"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+
+        <android.widget.EditText
+            android:id="@+id/texto4"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+            android:hint="Phone"
+            android:layout_weight="3"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"/>
+
+        <android.widget.EditText
+            android:id="@+id/texto2"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+        android:hint="Phonetic Name"
+            android:layout_weight="3"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"/>
+
+        <android.widget.EditText
+            android:id="@+id/texto3"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+            android:hint="Nickname"
+            android:layout_weight="3"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.ImageView
+            android:id="@+id/camara"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:src="@drawable/img"
+            android:layout_marginLeft="12dp"
+
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+
+        <android.widget.ImageView
+            android:id="@+id/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/android"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+
+        <android.widget.Button
+            android:id="@+id/button"
+            android:layout_width="15dp"
+            android:hint="Change"
+            android:layout_weight="1"
+            android:textColorHint="@color/black"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.ImageView
+            android:id="@+id/userImg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:src="@drawable/phone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+
+        <android.widget.EditText
+            android:id="@+id/texto1"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+            android:hint="Phone"
+            android:layout_weight="3"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"/>
+
+        <android.widget.Spinner
+            android:id="@+id/spinner"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.ImageView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:src="@drawable/email"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+
+        <android.widget.EditText
+            android:id="@+id/texto5"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+            android:hint="Email"
+            android:layout_weight="3"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            />
+    </TableRow>
+
+</TableLayout>
+</ScrollView>
