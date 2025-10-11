@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
     <TableLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:stretchColumns="1"
-        android:background="#EBEBEB">
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#03A9F4"
-        android:padding="8dp">
-
-        <android.widget.TextView
-            android:id="@+id/titleBar"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:textAlignment="center"
-            android:text="Play juegos"
-            android:textColor="@android:color/white"
-            android:textSize="32sp"
-            android:layout_gravity="center"
-            android:textStyle="bold"
-            android:gravity="center"/>
-
-    </TableRow>
+        android:background="@color/background">
 
     <TableRow
         android:layout_width="match_parent"
@@ -134,9 +116,11 @@
         <android.widget.Button
             android:id="@+id/button"
             android:layout_width="15dp"
-            android:hint="Change"
+            android:hint="CHANGE"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:textColorHint="@color/black"
+            android:background="#aa8BC34A"
             />
 
         <Space
