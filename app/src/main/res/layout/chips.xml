@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewChips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plataformas:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="false"
+            app:chipSpacing="8dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PS4"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PC"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XBOX"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WII"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIIU"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3DS"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X360"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/textViewChipsGen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Géneros:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:chipSpacing="0dp"
+                app:singleSelection="false">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chiph1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Accion"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:chipBackgroundColor="@android:color/white"
+                    app:chipCornerRadius="0dp"
+                    app:chipStrokeWidth="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/celeste" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chiph2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Aventura"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:chipBackgroundColor="@android:color/white"
+                    app:chipCornerRadius="0dp"
+                    app:chipStrokeWidth="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/celeste" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chiph3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Deportes"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:chipBackgroundColor="@android:color/white"
+                    app:chipCornerRadius="0dp"
+                    app:chipStrokeWidth="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/celeste" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chiph4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Disparos"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:chipBackgroundColor="@android:color/white"
+                    app:chipCornerRadius="0dp"
+                    app:chipStrokeWidth="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/celeste" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chiph5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Estrategia"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:chipBackgroundColor="@android:color/white"
+                    app:chipCornerRadius="0dp"
+                    app:chipStrokeWidth="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/celeste" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chiph6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Lucha"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:chipBackgroundColor="@android:color/white"
+                    app:chipCornerRadius="0dp"
+                    app:chipStrokeWidth="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/celeste" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chiph7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Musical"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:chipBackgroundColor="@android:color/white"
+                    app:chipCornerRadius="0dp"
+                    app:chipStrokeWidth="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/celeste" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chiph8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Rol"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:chipBackgroundColor="@android:color/white"
+                    app:chipCornerRadius="0dp"
+                    app:chipStrokeWidth="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/celeste" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chiph9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Simulación"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:chipBackgroundColor="@android:color/white"
+                    app:chipCornerRadius="0dp"
+                    app:chipStrokeWidth="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/celeste" />
+            </com.google.android.material.chip.ChipGroup>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="center"
+        app:backgroundTint="@color/red"
+        app:fabCradleMargin="8dp"
+        app:fabCradleRoundedCornerRadius="20dp"
+        app:fabCradleVerticalOffset="10dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/bottomAppBar"
+        app:layout_anchorGravity="center"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/celeste"
+        app:tint="@color/black"
+        app:useCompatPadding="true"
+        app:fabSize="normal"
+        android:contentDescription="Boton inferior" />
+
+    <LinearLayout
+        android:id="@+id/blockHint"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="@android:color/black"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrastra hacia arriba"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

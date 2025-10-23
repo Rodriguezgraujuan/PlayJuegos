@@ -18,4 +18,9 @@
         android:icon="@android:drawable/ic_menu_add"
         android:orderInCategory="100"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_show_chips"
+        android:title="Chips"
+        app:showAsAction="never" />
 </menu>
