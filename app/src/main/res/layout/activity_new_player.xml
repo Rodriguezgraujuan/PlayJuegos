@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/background">
 
     <TableLayout
@@ -29,15 +30,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.2"/>
 
-        <android.widget.EditText
-            android:id="@+id/texto4"
-            android:layout_marginTop="15dp"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="0dp"
-            android:hint="Phone"
+            android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:textColorHint="@color/black"
-            android:textColor="@color/black"
-            />
+            android:layout_marginTop="15dp"
+            app:hintEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/texto4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
     </TableRow>
 
     <TableRow
@@ -50,15 +57,22 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.8"/>
 
-        <android.widget.EditText
-            android:id="@+id/texto2"
-            android:layout_marginTop="15dp"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="0dp"
-        android:hint="Phonetic Name"
+            android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:textColorHint="@color/black"
-            android:textColor="@color/black"
-            />
+            android:layout_marginTop="15dp"
+            app:hintEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/texto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phonetic Name"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
     </TableRow>
 
     <TableRow
@@ -71,15 +85,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.8"/>
 
-        <android.widget.EditText
-            android:id="@+id/texto3"
-            android:layout_marginTop="15dp"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="0dp"
-            android:hint="Nickname"
+            android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:textColorHint="@color/black"
-            android:textColor="@color/black"
-            />
+            android:layout_marginTop="15dp"
+            app:hintEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/texto3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nickname"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
     </TableRow>
 
     <TableRow
@@ -198,15 +218,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.2"/>
 
-        <android.widget.EditText
-            android:id="@+id/texto5"
-            android:layout_marginTop="15dp"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="0dp"
-            android:hint="Email"
+            android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:textColorHint="@color/black"
-            android:textColor="@color/black"
-            />
+            android:layout_marginTop="15dp"
+            app:hintEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/texto5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
     </TableRow>
 
 </TableLayout>
