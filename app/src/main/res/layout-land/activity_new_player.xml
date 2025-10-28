@@ -12,28 +12,13 @@
         android:layout_height="wrap_content"
         android:background="#EBEBEB">
 
-    <TextView
-        android:id="@+id/titleBar"
-        android:layout_width="0dp"
-        android:layout_height="64dp"
-        android:background="#03A9F4"
-        android:gravity="center"
-        android:text="Play juegos"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <ImageView
         android:id="@+id/usericon"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="10dp"
         android:src="@drawable/usericon"
-        app:layout_constraintTop_toBottomOf="@id/titleBar"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
         />
@@ -99,12 +84,13 @@
 
         />
 
-    <Button
+    <android.widget.Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Change"
         android:textColorHint="@color/black"
+        android:background="#aa8BC34A"
         android:layout_marginStart="32dp"
         app:layout_constraintStart_toEndOf="@id/android"
         app:layout_constraintTop_toTopOf="@id/android"
@@ -133,7 +119,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/userImg" />
 
-    <Spinner
+    <android.widget.Spinner
         android:id="@+id/spinner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
